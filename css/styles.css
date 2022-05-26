@@ -67,28 +67,28 @@ h2{
 
 .sedan button {
     margin-top: 100px;
-    border: none;
     border-radius: 50px;
     padding: 15px 32px;
     background-color: var(--light-gray);
     color: var(--Bright-orange);
+    border: 2px solid var(--light-gray);
 }
 
 .suvs button {
     margin-top: 100px;
-    border: none;
     border-radius: 50px;
     padding: 15px 32px;
     background-color: var(--light-gray);
     color: var(--Dark-cyan);
+    border: 2px solid var(--light-gray);
 }
 .luxury button {
     margin-top: 100px;
-    border: none;
     border-radius: 50px;
     padding: 15px 32px;
     background-color: var(--light-gray);
     color: var(--Very-dark-cyan);
+    border: 2px solid var(--light-gray);
 }
 
 .btn:hover{
