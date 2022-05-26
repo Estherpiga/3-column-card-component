@@ -1,0 +1,135 @@
+/*-------======= Google Fonts ========-------*/
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+/* -------======= Colors =========------ */
+:root{
+
+/* == Primary == */
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+
+/* == Neutral === */
+--paragraps: hsla(0, 0%, 100%, 0.75);
+--light-gray: hsl(0, 0%, 95%);
+
+
+}
+
+
+body{
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container{
+     width: 830px; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+section{
+    color: var(--paragraps);
+    padding: 40px;
+    line-height: 25px;
+
+}
+
+h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+}
+
+.sedan{
+    background-color:  var(--Bright-orange);
+    border-radius: 10px 0 0 10px;
+}
+
+.suvs{
+    background-color: var(--Dark-cyan);
+}
+
+.luxury{
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 10px 10px 0;
+}
+
+/*--====== Buttons =======--*/
+
+
+.sedan button {
+    margin-top: 100px;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 32px;
+    background-color: var(--light-gray);
+    color: var(--Bright-orange);
+}
+
+.suvs button {
+    margin-top: 100px;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 32px;
+    background-color: var(--light-gray);
+    color: var(--Dark-cyan);
+}
+.luxury button {
+    margin-top: 100px;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 32px;
+    background-color: var(--light-gray);
+    color: var(--Very-dark-cyan);
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--light-gray);
+    border: 2px solid var(--light-gray);
+}
+
+/*--====== Footer ======--*/
+
+.attribution{
+    width: 100%;
+    text-align: center;
+    border: 1px solid blue;
+    margin-top: 50px;
+}
+
+/*--======= Media Queryes =======--*/
+
+@media screen and (max-width: 375px){
+    .container {
+        flex-direction: column;
+        width: 85%;
+
+    }
+    section{
+        height: auto;
+    }
+
+    .sedan{
+        border-radius: 10px 10px 0 0;
+    }
+
+    .luxury{
+        border-radius: 0 0 10px 10px;
+    }
+
+    .attribution{
+        font-size: 12px;
+        margin-top: 12px;
+    }
+}
+ 
